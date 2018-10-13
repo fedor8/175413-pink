@@ -2,15 +2,35 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
+      <a class="logo-wrapper">
+        <img class="logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Сайт приложения «PINK», раскрашивающего мир.">
+      </a>
       <nav class="main-menu">
-        <a class="logo-wrapper">
-          <img class="logo" src="img/logo.svg" width="154" height="64" alt="Сайт приложения «PINK», раскрашивающего мир.">
-        </a>
-        <button class="main-menu__toggle main-menu__toggle--open" type="button">Открыть меню</button>
+        <button class="main-menu__toggle main-menu__toggle--open" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <svg class="main-menu__toggle-icon main-menu__toggle-icon--open" version="1.0" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="24px" viewBox="0 0 50 24" enable-background="new 0 0 50 24" xml:space="preserve">
+            <g id="miu">
+              <g id="editor_list_view_hambuger_menu_glyph">
+                <g>
+                  <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                </g>
+                <g>
+                  <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <svg class="main-menu__toggle-icon main-menu__toggle-icon--close" version="1.0" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+            <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+          </svg>
+        </button>
         <ul class="main-menu__list">
           <li class="main-menu__list-item">
             <a class="main-menu__list-link">Главная</a>
@@ -30,22 +50,28 @@
     <main>
       <section class="page-title page-title--index-page">
         <h1 class="visually-hidden">Приложение «PINK», раскрашивающее мир.</h1>
-        <img class="page-title__promo-image" src="img/promo-image.png" alt="Приложение «PINK», раскрашивающее мир." width="100" height="200">
+        <img class="page-title__promo-image" src="img/iphone-hand-mobile@1x.png" alt="Приложение «PINK», раскрашивающее мир." width="258" height="286">
       </section>
       <section class="download-links">
         <h2 class="visually-hidden">Как скачать приложение</h2>
         <ul class="download-links__list">
-          <li class="download-links__list-item">
-            <a class="download-links__link large-button large-button--download" href="https://itunes.apple.com/ru/store">Скачать приложение</a>
+          <li class="download-links__list-item download-links__list-item--main">
+            <a class="download-links__link download-links__link--main large-button large-button--download" href="https://itunes.apple.com/ru/store">Скачать приложение</a>
           </li>
           <li class="download-links__list-item">
-            <a class="download-links__link download-links__link--apple" href="https://itunes.apple.com/ru/store">Apple</a>
+            <a class="download-links__link download-links__link--apple" href="https://itunes.apple.com/ru/store">
+              <span class="visually-hidden">Apple</span>
+            </a>
           </li>
           <li class="download-links__list-item">
-            <a class="download-links__link download-links__link--android" href="https://play.google.com/store/apps?hl=ru">Android</a>
+            <a class="download-links__link download-links__link--android" href="https://play.google.com/store/apps?hl=ru">
+              <span class="visually-hidden">Android</span>
+            </a>
           </li>
           <li class="download-links__list-item">
-            <a class="download-links__link download-links__link--windows" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">Windows</a>
+            <a class="download-links__link  download-links__link--windows" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">
+              <span class="visually-hidden">Windows</span>
+            </a>
           </li>
         </ul>
         <p class="download-links__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
@@ -74,7 +100,7 @@
           </li>
         </ul>
         <div class="features__promo-image-wrapper">
-          <img class="features__promo-image" src="img/promo-image2.png" alt="Демонстрационная картинка." width="100" height="200">
+          <img class="features__promo-image" src="img/iphone-screen-mobile@1x.png" alt="Демонстрационная картинка." width="157" height="320">
         </div>
       </section>
       <section class="reviews">
@@ -121,21 +147,21 @@
         <input class="tariff__toggle" type="radio" id="tariff-2" name="tariff-toggle" checked>
         <input class="tariff__toggle" type="radio" id="tariff-3" name="tariff-toggle">
         <table class="tariff__table">
-          <tr>
-            <th>
+          <tr class="tariff__table-row">
+            <th class="tariff__header">
               <h3 class="tariff__name">База</h3>
               <span class="tariff__price">1,99 USD</span>
             </th>
-            <th>
+            <th class="tariff__header">
               <h3 class="tariff__name">Стандарт</h3>
               <span class="tariff__price">3,99 USD</span>
             </th>
-            <th>
+            <th class="tariff__header">
               <h3 class="tariff__name">Анлим</h3>
               <span class="tariff__price">9,99 USD</span>
             </th>
           </tr>
-          <tr>
+          <tr class="tariff__table-row">
             <td class="tariff__property">
               Розовый фильтр
               <span class="tariff__value-yes">Да</span>
@@ -149,7 +175,7 @@
               <span class="tariff__value-yes">Да</span>
             </td>
           </tr>
-          <tr>
+          <tr class="tariff__table-row">
             <td class="tariff__property">
               Смайлики
               <span class="tariff__value-no">Нет</span>
@@ -163,16 +189,17 @@
               <span class="tariff__value-yes">Да</span>
             </td>
           </tr>
-          <tr>
-            <td class="tariff__property">Комментарии
+          <tr class="tariff__table-row">
+            <td class="tariff__property">
+              Комментарии
               <span class="tariff__value-no">Нет</span>
             </td>
             <td class="tariff__property">
-              Смайлики
+              Комментарии
               <span class="tariff__value-no">Нет</span>
             </td>
             <td class="tariff__property">
-              Смайлики
+              Комментарии
               <span class="tariff__value-yes">Да</span>
             </td>
           </tr>
@@ -214,7 +241,7 @@
           </li>
         </ul>
         <div class="contacts__address-map">
-          <img class="contacts__address-map-image" src="img/map.jpg" alt="Карта проезда" width="100" height="100">
+          <img class="contacts__address-map-image" src="img/bg-map-mobile@1x.png" alt="Карта проезда" width="320" height="645">
         </div>
       </section>
     </main>

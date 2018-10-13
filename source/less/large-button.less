@@ -1,0 +1,24 @@
+@large-button-half-height: 25px;
+@large-button-border-width: 3px;
+@large-button-font-size: 18px;
+
+.large-button {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  border-width: @large-button-border-width;
+  border-style: solid;
+  border-radius: @large-button-border-width + @large-button-half-height;
+  padding-left: 35px;
+  padding-right: 35px;
+  display: table-cell;
+  vertical-align: center;
+  padding-top: calc(@large-button-half-height - @large-button-font-size/2);
+  padding-bottom: calc(@large-button-half-height - @large-button-font-size/2);
+}
+
+.large-button--download {
+  color: @white;
+  border-color: @white;
+}
