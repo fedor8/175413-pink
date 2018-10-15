@@ -1,0 +1,62 @@
+.download-links {
+  background-color: @bg-dark-gray;
+  padding-bottom: 35px;
+}
+
+.download-links__text {
+  color: @white;
+  line-height: 1.714;
+  text-align: center;
+  padding-top: 28px;
+}
+
+.download-links__list {
+  .reset-list();
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.download-links__link {
+  &::before {
+    content: "";
+    display: block;
+    height: 60px;
+    width: 50px;
+  }
+
+  &--main::before {
+    content: unset;
+  }
+
+  &--apple::before {
+    background: url("../../img/logo-apple.svg") no-repeat center;
+  }
+
+  &--android::before {
+    background: url("../../img/logo-android.svg") no-repeat center;
+  }
+
+  &--windows::before {
+    background: url("../../img/logo-microsoft.svg") no-repeat center;
+  }
+}
+
+.download-links__list-item {
+  .reset-list-item();
+  text-align: center;
+  width: 50px;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 28px;
+  margin-top: 20px;
+
+  &--main {
+    padding-right: 0;
+    padding-left: 0;
+    width: 280px;
+  }
+}
