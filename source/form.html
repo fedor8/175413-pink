@@ -9,43 +9,49 @@
 </head>
 <body>
 <header class="main-header">
-  <a class="logo" href="index.html">
-    <img class="logo__icon" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Сайт приложения «PINK», раскрашивающего мир.">
-  </a>
-  <nav class="main-menu">
-    <button class="main-menu__toggle main-menu__toggle--open" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-      <svg class="main-menu__toggle-icon main-menu__toggle-icon--open" version="1.0" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="24px" viewBox="0 0 50 24" enable-background="new 0 0 50 24" xml:space="preserve">
-            <g id="miu">
-              <g id="editor_list_view_hambuger_menu_glyph">
-                <g>
-                  <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-                </g>
-                <g>
-                  <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+  <div class="main-header__content">
+    <a class="logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+        <img class="logo__icon" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Сайт приложения «PINK», раскрашивающего мир.">
+      </picture>
+    </a>
+    <nav class="main-menu main-menu--opened">
+      <button class="main-menu__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <svg class="main-menu__toggle-icon main-menu__toggle-icon--open" version="1.0" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="24px" viewBox="0 0 50 24" enable-background="new 0 0 50 24" xml:space="preserve">
+              <g id="miu">
+                <g id="editor_list_view_hambuger_menu_glyph">
+                  <g>
+                    <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                  </g>
+                  <g>
+                    <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                  </g>
                 </g>
               </g>
-            </g>
-          </svg>
-          <svg class="main-menu__toggle-icon main-menu__toggle-icon--close" version="1.0" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-            <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
-          </svg>
-    </button>
-    <ul class="main-menu__list">
-      <li class="main-menu__list-item">
-        <a class="main-menu__list-link" href="index.html">Главная</a>
-      </li>
-      <li class="main-menu__list-item">
-        <a class="main-menu__list-link" href="photo.html">Фотографии</a>
-      </li>
-      <li class="main-menu__list-item">
-        <a class="main-menu__list-link">Конкурс</a>
-      </li>
-      <li class="main-menu__list-item">
-        <a class="main-menu__list-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </li>
-    </ul>
-  </nav>
+            </svg>
+            <svg class="main-menu__toggle-icon main-menu__toggle-icon--close" version="1.0" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+              <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+            </svg>
+      </button>
+      <ul class="main-menu__list">
+        <li class="main-menu__list-item">
+          <a class="main-menu__list-link" href="index.html">Главная</a>
+        </li>
+        <li class="main-menu__list-item">
+          <a class="main-menu__list-link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="main-menu__list-item">
+          <a class="main-menu__list-link">Конкурс</a>
+        </li>
+        <li class="main-menu__list-item">
+          <a class="main-menu__list-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 <main>
   <section class="page-title">
@@ -106,5 +112,6 @@
     </svg>
   </a>
 </footer>
+<script src="js/app.js"></script>
 </body>
 </html>

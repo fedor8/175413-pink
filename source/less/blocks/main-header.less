@@ -1,3 +1,26 @@
 .main-header {
-  background-color: @bg-dark-gray;
+  position: relative;
+  z-index: 5;
+
+  @media (min-width: @tablet-width) {
+    min-height: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @blackout-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.main-header__content {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    .full-width();
+    padding: 0 @indent-horizontal-small;
+    max-width: @max-content-width;
+  }
 }

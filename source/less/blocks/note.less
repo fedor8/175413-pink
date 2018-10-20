@@ -1,10 +1,23 @@
 .note {
-  background-color: @bg-light-gray;
+  background-color: @super-light-gray;
   line-height: 1.714;
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
   padding: 0 25px 25px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 20px);
+    padding-bottom: 0;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: calc(100% - 55px);
+    margin-bottom: 75px;
+  }
 }
 
 .note__author {
@@ -14,7 +27,7 @@
 }
 
 .note__time {
-  display: inline-block;
+  font-weight: normal;
 }
 
 .note__likes {
@@ -34,14 +47,35 @@
 
 .note__image-wrapper {
   margin-bottom: 20px;
-}
+  text-align: center;
 
-.note__image-wrapper--panorama {
-  margin-left: -25px;
-  margin-right: -25px;
+  &--panorama {
+    margin-left: -25px;
+    margin-right: -25px;
+
+    @media (max-width: @mobile-width) {
+      height: 137px;
+    }
+
+    @media (min-width: @mobile-width) {
+      height: 509px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 506px;
+    }
+  }
 }
 
 .note__content {
   padding-top: 5px;
   padding-bottom: 20px;
+}
+
+.note__image {
+  &--panorama {
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
 }
