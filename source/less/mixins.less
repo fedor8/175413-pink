@@ -55,3 +55,26 @@
   margin: 0 auto;
   width: 100%;
 }
+
+.max-width() {
+  @media(min-width: @tablet-width) {
+    .full-width();
+    max-width: @max-tablet-width;
+  }
+
+  @media(min-width: @desktop-width) {
+    max-width: @max-desktop-width;
+  }
+}
+
+.max-width-with-paddings() {
+  .full-width();
+
+  @media(min-width: @tablet-width) {
+    max-width: @tablet-width;
+  }
+
+  @media(min-width: @desktop-width) {
+    max-width: @max-desktop-width-with-paddings;
+  }
+}
