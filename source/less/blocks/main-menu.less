@@ -20,7 +20,7 @@
   }
 
   &--opened {
-    background-color: @dark-gray;
+    background-color: @dark-blue;
   }
 }
 
@@ -57,12 +57,12 @@
   .reset-list-item();
   font-size: 18px;
   color: @white;
-  background-color: @dark-gray;
+  background-color: @dark-blue;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   line-height: 1;
-  border-top: solid @light-blue 1px;
+  border-top: solid @light-blue 2px;
   border-bottom: solid @black 1px;
 
   @media (min-width: @desktop-width) {
@@ -86,7 +86,7 @@
   cursor: pointer;
   align-self: flex-end;
   margin-top: 22px;
-  margin-bottom: 12px;
+  margin-bottom: 19px;
   margin-right: @indent-horizontal;
 
   @media (min-width: @tablet-width) {
@@ -99,9 +99,12 @@
   }
 }
 
-&main-menu__toggle-icon {
+.main-menu__toggle-icon {
+  position: relative;
+  left: 7px;
+  top: -2px;
   &--close {
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
   }
 }
 
@@ -109,8 +112,8 @@
 .main-menu__list-link {
   display: flex;
   flex-direction: column;
-  padding-bottom: 23px;
-  padding-top: 23px;
+  padding-bottom: 22px;
+  padding-top: 22px;
 
   @media (min-width: @desktop-width) {
     max-width: @max-menu-width;
