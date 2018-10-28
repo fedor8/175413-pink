@@ -5,4 +5,30 @@
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 620px;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
+  }
+}
+
+.main-footer__logo {
+  @media(min-width: @tablet-width) {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.main-footer__developed-by {
+  @media(min-width: @tablet-width) {
+    position: absolute;
+    right: 0;
+  }
 }

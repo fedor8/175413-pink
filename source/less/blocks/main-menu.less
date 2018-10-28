@@ -1,27 +1,83 @@
 .main-menu {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    min-height: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    padding-left: 170px;
+  }
+
+  &--closed {
+    background-color: @blackout-color;
+
+    @media (min-width: @desktop-width) {
+      background-color: transparent;
+    }
+  }
+
+  &--opened {
+    background-color: @dark-gray;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .main-menu--closed {
+    .main-menu__toggle-icon--close {
+      display: none;
+    }
+
+    .main-menu__list {
+      display: none;
+    }
+  }
+
+  .main-menu--opened {
+    .main-menu__toggle-icon--open {
+      display: none;
+    }
+  }
 }
 
 .main-menu__list {
   .reset-list();
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: @max-menu-width;
+  }
 }
 
 .main-menu__list-item {
   .reset-list-item();
   font-size: 18px;
   color: @white;
-  background-color: @bg-dark-gray;
+  background-color: @dark-gray;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   line-height: 1;
   border-top: solid @light-blue 1px;
   border-bottom: solid @black 1px;
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+    font-weight: unset;
+    text-transform: unset;
+    border: none;
+    padding-top: 20px;
+  }
 }
 
-.main-menu__list-item:nth-child(1) {
-  box-shadow: 0 0 0 1px @black;
+@media (max-width: @desktop-width) {
+  .main-menu__list-item:nth-child(1) {
+    box-shadow: 0 0 0 1px @black;
+  }
 }
 
 .main-menu__toggle {
@@ -30,17 +86,34 @@
   cursor: pointer;
   align-self: flex-end;
   margin-top: 22px;
-  margin-bottom: 22px;
-  margin-right: @ident-horizontal-small;
+  margin-bottom: 12px;
+  margin-right: @indent-horizontal;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
+
+&main-menu__toggle-icon {
+  &--close {
+    padding-bottom: 10px;
+  }
+}
+
 
 .main-menu__list-link {
   display: flex;
   flex-direction: column;
   padding-bottom: 23px;
   padding-top: 23px;
-}
 
-.main-menu__toggle-icon--close {
-  display: none;
+  @media (min-width: @desktop-width) {
+    max-width: @max-menu-width;
+    overflow-wrap: break-word;
+  }
 }

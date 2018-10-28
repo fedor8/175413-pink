@@ -6,3 +6,75 @@
 .reset-list-item() {
   list-style-type: none;
 }
+
+.visibility-hidden() {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.diagonal-border() {
+  &::before {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, @white, @white 50%, @super-light-gray 50%, @super-light-gray);
+
+    @media (min-width: @tablet-width) {
+      height: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 95px;
+    }
+  }
+}
+
+.margins-for-diagonal-border() {
+  @media (min-width: @tablet-width) {
+    margin-top: -60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -95px;
+  }
+}
+
+.full-width() {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.max-width() {
+  @media(min-width: @tablet-width) {
+    .full-width();
+    max-width: @max-tablet-width;
+  }
+
+  @media(min-width: @desktop-width) {
+    max-width: @max-desktop-width;
+  }
+}
+
+.max-width-with-paddings() {
+  .full-width();
+
+  @media(min-width: @tablet-width) {
+    max-width: @tablet-width;
+  }
+
+  @media(min-width: @desktop-width) {
+    max-width: @max-desktop-width-with-paddings;
+  }
+}

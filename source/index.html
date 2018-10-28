@@ -9,13 +9,18 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="logo">
-        <img class="logo__icon" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Сайт приложения «PINK», раскрашивающего мир.">
-      </a>
-      <nav class="main-menu">
-        <button class="main-menu__toggle main-menu__toggle--open" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <svg class="main-menu__toggle-icon main-menu__toggle-icon--open" version="1.0" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="24px" viewBox="0 0 50 24" enable-background="new 0 0 50 24" xml:space="preserve">
+      <div class="main-header__content">
+        <a class="logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="logo__icon" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Сайт приложения «PINK», раскрашивающего мир.">
+          </picture>
+        </a>
+        <nav class="main-menu main-menu--opened">
+          <button class="main-menu__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg class="main-menu__toggle-icon main-menu__toggle-icon--open" version="1.0" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="24px" viewBox="0 0 50 24" enable-background="new 0 0 50 24" xml:space="preserve">
             <g id="miu">
               <g id="editor_list_view_hambuger_menu_glyph">
                 <g>
@@ -30,51 +35,64 @@
           <svg class="main-menu__toggle-icon main-menu__toggle-icon--close" version="1.0" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
             <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
           </svg>
-        </button>
-        <ul class="main-menu__list">
-          <li class="main-menu__list-item">
-            <a class="main-menu__list-link">Главная</a>
-          </li>
-          <li class="main-menu__list-item">
-            <a class="main-menu__list-link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-menu__list-item">
-            <a class="main-menu__list-link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-menu__list-item">
-            <a class="main-menu__list-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+          </button>
+          <ul class="main-menu__list">
+            <li class="main-menu__list-item">
+              <a class="main-menu__list-link">Главная</a>
+            </li>
+            <li class="main-menu__list-item">
+              <a class="main-menu__list-link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-menu__list-item">
+              <a class="main-menu__list-link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-menu__list-item">
+              <a class="main-menu__list-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
+    <main class="main-content">
       <section class="page-title page-title--index-page">
-        <h1 class="visually-hidden">Приложение «PINK», раскрашивающее мир.</h1>
-        <img class="page-title__promo-image" src="img/iphone-hand-mobile@1x.png" alt="Приложение «PINK», раскрашивающее мир." width="258" height="286">
-      </section>
-      <section class="download-links">
-        <h2 class="visually-hidden">Как скачать приложение</h2>
-        <ul class="download-links__list">
-          <li class="download-links__list-item download-links__list-item--main">
-            <a class="download-links__link download-links__link--main large-button large-button--download" href="https://itunes.apple.com/ru/store">Скачать приложение</a>
-          </li>
-          <li class="download-links__list-item">
-            <a class="download-links__link download-links__link--apple" href="https://itunes.apple.com/ru/store">
-              <span class="visually-hidden">Apple</span>
-            </a>
-          </li>
-          <li class="download-links__list-item">
-            <a class="download-links__link download-links__link--android" href="https://play.google.com/store/apps?hl=ru">
-              <span class="visually-hidden">Android</span>
-            </a>
-          </li>
-          <li class="download-links__list-item">
-            <a class="download-links__link  download-links__link--windows" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">
-              <span class="visually-hidden">Windows</span>
-            </a>
-          </li>
-        </ul>
-        <p class="download-links__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+        <div class="page-title__wrapper">
+          <h1 class="visually-hidden">Приложение «PINK», раскрашивающее мир.</h1>
+          <picture class="page-title__promo-picture">
+            <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png">
+            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png">
+            <img class="page-title__promo-image" src="img/iphone-hand-mobile@1x.png" alt="Приложение «PINK», раскрашивающее мир.">
+          </picture>
+        </div>
+        <section class="download-links">
+          <div class="download-links__content">
+            <h2 class="visually-hidden">Как скачать приложение</h2>
+            <p class="download-links__slogan">Взгляните на жизнь иначе!</p>
+            <ul class="download-links__list">
+              <li class="download-links__list-item download-links__list-item--main">
+                <a class="download-links__link download-links__link--main large-button large-button--download" href="https://itunes.apple.com/ru/store">Скачать приложение</a>
+              </li>
+              <li class="download-links__list-item">
+                <a class="download-links__link download-links__link--apple" href="https://itunes.apple.com/ru/store">
+                  <span class="visually-hidden">Apple</span>
+                  <img src="img/logo-apple.svg" alt="Apple" width="46" height="56">
+                </a>
+              </li>
+              <li class="download-links__list-item">
+                <a class="download-links__link download-links__link--android" href="https://play.google.com/store/apps?hl=ru">
+                  <span class="visually-hidden">Android</span>
+                  <img src="img/logo-android.svg" alt="Android" width="42" height="47">
+                </a>
+              </li>
+              <li class="download-links__list-item">
+                <a class="download-links__link  download-links__link--windows" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone">
+                  <span class="visually-hidden">Windows</span>
+                  <img src="img/logo-microsoft.svg" alt="Windows" width="43" height="41">
+                </a>
+              </li>
+            </ul>
+            <p class="download-links__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+          </div>
+        </section>
       </section>
       <section class="features">
         <header class="features__header">
@@ -82,25 +100,59 @@
           <p class="features__header-item">Устали от серости мегаполиса?</p>
           <p class="features__header-item">Нам есть, что вам  предложить!</p>
         </header>
-        <ul class="features__list">
-          <li class="features__item">
-            <p class="features__title">Поднимает настроение</p>
-            <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-              несколько кликов!</p>
-          </li>
-          <li class="features__item">
-            <p class="features__title">Меняет мир вокруг</p>
-            <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-              усилить эффект</p>
-          </li>
-          <li class="features__item">
-            <p class="features__title">Заводит новых друзей</p>
-            <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-              новых</p>
-          </li>
-        </ul>
-        <div class="features__promo-image-wrapper">
-          <img class="features__promo-image" src="img/iphone-screen-mobile@1x.png" alt="Демонстрационная картинка." width="157" height="320">
+        <main class="features__content-wrapper">
+          <div class="features__content">
+            <ul class="features__list">
+              <li class="features__item">
+                <p class="features__title">Поднимает настроение</p>
+                <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+                  несколько кликов!</p>
+              </li>
+              <li class="features__item">
+                <p class="features__title">Меняет мир вокруг</p>
+                <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+                  усилить эффект</p>
+              </li>
+              <li class="features__item">
+                <p class="features__title">Заводит новых друзей</p>
+                <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+                  новых</p>
+              </li>
+            </ul>
+            <ul class="features__promo-images">
+              <li class="features__promo-image-wrapper features__promo-image-wrapper--gray">
+                <picture class="page-title__promo-picture">
+                  <img class="features__promo-image" src="img/iphone-screen-1-desktop@1x.png" alt="Демонстрационная картинка.">
+                </picture>
+              </li>
+              <li class="features__promo-image-wrapper features__promo-image-wrapper--pink">
+                <picture class="page-title__promo-picture">
+                  <img class="features__promo-image" src="img/iphone-screen-2-desktop@1x.png" alt="Демонстрационная картинка.">
+                </picture>
+              </li>
+              <li class="features__promo-image-wrapper features__promo-image-wrapper--smile">
+                <picture class="page-title__promo-picture">
+                  <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png">
+                  <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
+                  <img class="features__promo-image" src="img/iphone-screen-mobile@1x.png" alt="Демонстрационная картинка.">
+                </picture>
+              </li>
+            </ul>
+          </div>
+        </main>
+        <div class="features__24-hours-wrapper">
+          <div class="features__24-hours">
+            <div class="features__24-hours-picture-wraper">
+              <svg class="features__24-hours-picture" version="1.1" x="0px" y="0px" width="298px" height="345.097px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
+                <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
+              </svg>
+            </div>
+            <div class="features__24-hours-info">
+              <p class="features__24-hours-title">Эффект на 24 часа!</p>
+              <p class="features__24-hours-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <a class="features__24-hours-link" href="#">Узнать больше об исследовании</a>
+            </div>
+          </div>
         </div>
       </section>
       <section class="reviews">
@@ -245,5 +297,6 @@
         </div>
       </section>
     </main>
+    <script src="js/app.js"></script>
   </body>
 </html>

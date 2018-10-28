@@ -1,6 +1,30 @@
 .download-links {
-  background-color: @bg-dark-gray;
+  background-color: @dark-gray;
   padding-bottom: 35px;
+
+  @media(max-width: @tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: @indent-horizontal-small;
+    background-color: transparent;
+    .full-width();
+    max-width: @max-desktop-width-with-paddings;
+    padding-bottom: 0;
+    align-self: flex-start;
+  }
+}
+
+.download-links__content {
+  @media (min-width: @tablet-width) {
+    padding-top: 210px;
+    max-width: @tablet-section-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 230px;
+  }
 }
 
 .download-links__text {
@@ -8,6 +32,8 @@
   line-height: 1.714;
   text-align: center;
   padding-top: 28px;
+  padding-right: @indent-horizontal;
+  padding-left: @indent-horizontal;
 }
 
 .download-links__list {
@@ -31,18 +57,6 @@
   &--main::before {
     content: unset;
   }
-
-  &--apple::before {
-    background: url("../../img/logo-apple.svg") no-repeat center;
-  }
-
-  &--android::before {
-    background: url("../../img/logo-android.svg") no-repeat center;
-  }
-
-  &--windows::before {
-    background: url("../../img/logo-microsoft.svg") no-repeat center;
-  }
 }
 
 .download-links__list-item {
@@ -53,10 +67,33 @@
   padding-left: 12px;
   padding-top: 28px;
   margin-top: 20px;
+  align-self: flex-end;
 
   &--main {
     padding-right: 0;
     padding-left: 0;
     width: 280px;
+  }
+}
+
+.download-links__slogan {
+  color: @white;
+  text-align: center;
+
+  @media (max-width: @tablet-width) {
+    .visibility-hidden();
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    max-width: 300px;
+    padding-left: 25px;
+    padding-right: 25px;
+    left: 10px;
+    overflow-wrap: break-word;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
   }
 }

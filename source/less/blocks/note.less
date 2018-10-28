@@ -1,10 +1,20 @@
 .note {
-  background-color: @bg-light-gray;
   line-height: 1.714;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 0 25px 25px;
+
+  &--panorama {
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+    flex-grow: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+  }
 }
 
 .note__author {
@@ -14,34 +24,63 @@
 }
 
 .note__time {
-  display: inline-block;
+  font-weight: normal;
 }
 
 .note__likes {
   font-size: 12px;
   color: @pink;
   text-transform: uppercase;
-  line-height: 2;
-}
+  line-height: 1;
 
-.note__likes path {
-  fill: @pink;
+  @media(min-width: @tablet-width) {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  path {
+    fill: @pink;
+  }
 }
 
 .note__likes-title {
   padding-left: 20px;
 }
 
+.note__image {
+  vertical-align: bottom;
+}
+
 .note__image-wrapper {
-  margin-bottom: 20px;
+  text-align: center;
 }
 
-.note__image-wrapper--panorama {
-  margin-left: -25px;
-  margin-right: -25px;
-}
-
-.note__content {
+.note__text {
   padding-top: 5px;
   padding-bottom: 20px;
+}
+
+.note__info {
+  background-color: @super-light-gray;
+  margin: 0 20px 20px;
+  padding: 18px 20px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--panorama {
+    .max-width();
+
+    @media (min-width: @tablet-width) {
+      margin: 0 auto 50px;
+    }
+  }
 }

@@ -1,16 +1,53 @@
 .page-title {
-  background: @bg-dark-gray url("../../img/bg-back-mobile@1x.jpg") no-repeat center;
+  background-color: @dark-gray;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   color: @white;
   text-align: center;
   margin-top: -66px;
-  height: 236px;
+  min-height: 236px;
   background-position-y: 0;
 
+  @media (min-width: @mobile-width) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  @media (min-width: @mobile-width + 1) {
+    min-height: 440px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: -110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    min-height: 394px;
+    margin-top: 0;
+  }
+
   &--index-page {
-    height: 462px;
+    min-height: 462px;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+
+    @media (min-width: @tablet-width) {
+      min-height: 730px;
+      position: relative;
+      z-index: -1;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-height: 853px;
+      justify-content: center;
+    }
   }
 }
 
@@ -25,4 +62,56 @@
   padding-top: calc(35px + 66px);
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: @mobile-width + 1) {
+    padding-top: calc(110px + 80px);
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 1.2;
+    max-width: 679px;
+    margin: 0 auto 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: calc(110px + 77px);
+    max-width: 820px;
+  }
+}
+
+.page-title__promo-image {
+  display: flex;
+
+  @media(max-width: @tablet-width) {
+    padding-top: 175px;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: -100px;
+  }
+}
+
+.page-title__wrapper {
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 780px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    align-items: self-end;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 960px;
+  }
 }
