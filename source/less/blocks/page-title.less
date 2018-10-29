@@ -9,7 +9,7 @@
   min-height: 236px;
   background-position-y: 0;
 
-  @media (min-width: @mobile-width) {
+  @media (min-width: @mobile-width + 1) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
@@ -83,8 +83,10 @@
 .page-title__promo-image {
   display: flex;
 
-  @media(max-width: @tablet-width) {
+  @media (max-width: @tablet-width) {
     padding-top: 175px;
+    position: relative;
+    left: -31px;
   }
 
   @media (min-width: @tablet-width) {
